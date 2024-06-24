@@ -25,6 +25,7 @@
 	color: var(--fgColor-disabled, var(--color-primer-fg-disabled));
 	background-color: var(--button-default-bgColor-rest, var(--color-btn-bg));
 	border-color: var(--button-default-borderColor-rest, var(--color-btn-border));
+	cursor:default;
 }
 svg.svg-code-css {
 	width: 13px;

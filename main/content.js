@@ -33,7 +33,7 @@ window.addEventListener('load', function () {
 		button.appendChild(svg);
 
 		// Butonun metnini ekliyoruz
-		var buttonText = document.createTextNode(' index.html');
+		var buttonText = document.createTextNode(' Index Viewer');
 		button.appendChild(buttonText);
 
 		// Container'a butonu ekliyoruz

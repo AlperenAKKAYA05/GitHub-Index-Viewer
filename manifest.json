@@ -22,7 +22,7 @@
 	"content_scripts": [
 		{
 			"matches": ["*://*.github.com/*"],
-			"css": ["./main/styles.css"],
+			"css": ["main/styles.css"],
 			"js": ["main/content.js"]
 		}
 	]

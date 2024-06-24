@@ -1,0 +1,32 @@
+#demo-button {
+	font-size: 12px;
+	border: 1px solid;
+	border-radius: 6px;
+	height: 92%;
+	transition-duration: 0.1s;
+	color: var(--button-default-fgColor-rest);
+	background-color: var(--button-default-bgColor-rest, var(--color-btn-bg));
+	border-color: var(--button-default-borderColor-rest, var(--color-btn-border));
+}
+
+#demo-button:hover {
+	background-color: var(
+		--button-default-bgColor-hover,
+		var(--color-btn-hover-bg)
+	);
+	border-color: var(
+		--button-default-borderColor-hover,
+		var(--color-btn-hover-border)
+	);
+	transition-duration: 0.1s;
+}
+
+#demo-button:disabled {
+	color: var(--fgColor-disabled, var(--color-primer-fg-disabled));
+	background-color: var(--button-default-bgColor-rest, var(--color-btn-bg));
+	border-color: var(--button-default-borderColor-rest, var(--color-btn-border));
+}
+svg.svg-code-css {
+	width: 13px;
+	height: 13px;
+}

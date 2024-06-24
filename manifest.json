@@ -1,0 +1,29 @@
+{
+	"manifest_version": 2,
+	"name": "GitHub Index Viewer",
+	"description": "GitHub projelerindeki index.html dosyalarını görüntülemek için bir eklenti.",
+	"version": "0.1.0",
+	"icons": {
+		"128": "icons/icon_128.png",
+		"547": "icons/icon.png",
+		"150": "icons/icon_150.png",
+		"240": "icons/icon_240.png",
+		"480": "icons/icon_480.png",
+		"512": "icons/icon_512.png"
+	},
+	"browser_action": {
+		"default_title": "GitHub Index Viewer",
+		"default_popup": "popup.html",
+		"default_icon": "icons/icon_128.png"
+	},
+	"permissions": [
+		"activeTab"
+	],
+	"content_scripts": [
+		{
+			"matches": ["*://*.github.com/*"],
+			"css": ["./main/styles.css"],
+			"js": ["main/content.js"]
+		}
+	]
+}
